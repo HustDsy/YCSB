@@ -1,80 +1,29 @@
-<!--
-Copyright (c) 2010 Yahoo! Inc., 2012 - 2016 YCSB contributors.
-All rights reserved.
+*https://github.com/brianfrankcooper/YCSB/blob/master/redis/README.md*
 
-Licensed under the Apache License, Version 2.0 (the "License"); you
-may not use this file except in compliance with the License. You
-may obtain a copy of the License at
+- 首先按照官方给的提示
 
-http://www.apache.org/licenses/LICENSE-2.0
+```shell
+git clone http://github.com/brianfrankcooper/YCSB.git
+cd YCSB
+mvn -pl site.ycsb:redis-binding -am clean package
+```
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-implied. See the License for the specific language governing
-permissions and limitations under the License. See accompanying
-LICENSE file.
--->
+在*mvn*编译之前需要对一些文件进行修改，从而导出数据。
 
-YCSB
-====================================
-[![Build Status](https://travis-ci.org/brianfrankcooper/YCSB.png?branch=master)](https://travis-ci.org/brianfrankcooper/YCSB)
+- 更改文件，需要移植鑫宇师兄给的压缩包中的一些文件。如图所示，主要就是WorkloadWriteFile.java和VariableLength.java这两个文件
 
+  <img src="https://gitee.com/hustdsy/blog-img/raw/master/image-20211129214248338.png" alt="image-20211129214248338" style="zoom:50%;" />
 
+- 之后修改redis目录，/Users/dongshenyu/Applications/YCSB/redis/src/main/java/com/yahoo/ycsb/db 其中更改RedisClient.java中96行和97行，可以更改将load/run文件写到哪个目录如/home/file.在0.17.0版本对应的是/Users/dongshenyu/Applications/YCSB/redis/src/main/java/site/ycsb/db中的RedisClient.java文件。
 
-Links
------
-* To get here, use https://ycsb.site
-* [Our project docs](https://github.com/brianfrankcooper/YCSB/wiki)
-* [The original announcement from Yahoo!](https://labs.yahoo.com/news/yahoo-cloud-serving-benchmark/)
+  <img src="https://gitee.com/hustdsy/blog-img/raw/master/image-20211129215158633.png" alt="image-20211129215158633" style="zoom:50%;" />
 
-Getting Started
----------------
+- 之后运行命令跑数据，这里我将数据写到了桌面上。修改的位置话，修改RedisClient.java文件中对应的位置，再mvn -pl ...命令编译一遍即可。
 
-1. Download the [latest release of YCSB](https://github.com/brianfrankcooper/YCSB/releases/latest):
+```shell
+#跑命令之前记得开启redis服务
+./bin/ycsb load redis -s -P workloads/workloada -p "redis.host=127.0.0.1" -p "redis.port=6379" > outputLoad.txt
+./bin/ycsb run redis -s -P workloads/workloada -p "redis.host=127.0.0.1" -p "redis.port=6379" > outputLoad.txt
+```
 
-    ```sh
-    curl -O --location https://github.com/brianfrankcooper/YCSB/releases/download/0.17.0/ycsb-0.17.0.tar.gz
-    tar xfvz ycsb-0.17.0.tar.gz
-    cd ycsb-0.17.0
-    ```
-    
-2. Set up a database to benchmark. There is a README file under each binding 
-   directory.
-
-3. Run YCSB command. 
-
-    On Linux:
-    ```sh
-    bin/ycsb.sh load basic -P workloads/workloada
-    bin/ycsb.sh run basic -P workloads/workloada
-    ```
-
-    On Windows:
-    ```bat
-    bin/ycsb.bat load basic -P workloads\workloada
-    bin/ycsb.bat run basic -P workloads\workloada
-    ```
-
-  Running the `ycsb` command without any argument will print the usage. 
-   
-  See https://github.com/brianfrankcooper/YCSB/wiki/Running-a-Workload
-  for a detailed documentation on how to run a workload.
-
-  See https://github.com/brianfrankcooper/YCSB/wiki/Core-Properties for 
-  the list of available workload properties.
-
-
-Building from source
---------------------
-
-YCSB requires the use of Maven 3; if you use Maven 2, you may see [errors
-such as these](https://github.com/brianfrankcooper/YCSB/issues/406).
-
-To build the full distribution, with all database bindings:
-
-    mvn clean package
-
-To build a single database binding:
-
-    mvn -pl site.ycsb:mongodb-binding -am clean package
+![image-20211129214918448](https://gitee.com/hustdsy/blog-img/raw/master/image-20211129214918448.png)
