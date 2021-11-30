@@ -2,21 +2,203 @@
 <testng-results total="41" passed="41" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-29T21:16:44Z" name="Command line suite" finished-at="2021-11-29T21:16:45Z" duration-ms="717">
+  <suite started-at="2021-11-30T10:28:21Z" name="Command line suite" finished-at="2021-11-30T10:28:22Z" duration-ms="960">
     <groups>
     </groups>
-    <test started-at="2021-11-29T21:16:44Z" name="Command line test" finished-at="2021-11-29T21:16:45Z" duration-ms="717">
-      <class name="site.ycsb.workloads.TestTimeSeriesWorkload">
-        <test-method signature="badTimeUnit()" started-at="2021-11-29T21:16:45Z" name="badTimeUnit" finished-at="2021-11-29T21:16:45Z" duration-ms="0" status="PASS">
-          <exception class="site.ycsb.WorkloadException">
+    <test started-at="2021-11-30T10:28:21Z" name="Command line test" finished-at="2021-11-30T10:28:22Z" duration-ms="960">
+      <class name="com.yahoo.ycsb.TestUtils">
+        <test-method signature="bytesToDoubleTooShort()" started-at="2021-11-30T10:28:21Z" name="bytesToDoubleTooShort" finished-at="2021-11-30T10:28:21Z" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Byte array must be 8 bytes wide.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Byte array must be 8 bytes wide.
+	at com.yahoo.ycsb.Utils.bytesToDouble(Utils.java:114)
+	at com.yahoo.ycsb.TestUtils.bytesToDoubleTooShort(TestUtils.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method signature="bytesToFromDouble()" started-at="2021-11-30T10:28:21Z" name="bytesToFromDouble" finished-at="2021-11-30T10:28:21Z" duration-ms="0" status="PASS">
+        </test-method>
+        <test-method signature="bytesToFromLong()" started-at="2021-11-30T10:28:21Z" name="bytesToFromLong" finished-at="2021-11-30T10:28:21Z" duration-ms="0" status="PASS">
+        </test-method>
+        <test-method signature="bytesToLongNull()" started-at="2021-11-30T10:28:21Z" name="bytesToLongNull" finished-at="2021-11-30T10:28:21Z" duration-ms="0" status="PASS">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot load from byte/boolean array because "bytes" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot load from byte/boolean array because "bytes" is null
+	at com.yahoo.ycsb.Utils.bytesToLong(Utils.java:75)
+	at com.yahoo.ycsb.TestUtils.bytesToLongNull(TestUtils.java:89)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method signature="bytesToLongTooShort()" started-at="2021-11-30T10:28:21Z" name="bytesToLongTooShort" finished-at="2021-11-30T10:28:21Z" duration-ms="0" status="PASS">
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 7 out of bounds for length 7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at com.yahoo.ycsb.Utils.bytesToLong(Utils.java:75)
+	at com.yahoo.ycsb.TestUtils.bytesToLongTooShort(TestUtils.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method signature="jvmUtils()" started-at="2021-11-30T10:28:21Z" name="jvmUtils" finished-at="2021-11-30T10:28:21Z" duration-ms="64" status="PASS">
+        </test-method>
+      </class>
+      <class name="com.yahoo.ycsb.TestByteIterator">
+        <test-method signature="testRandomByteIterator()" started-at="2021-11-30T10:28:21Z" name="testRandomByteIterator" finished-at="2021-11-30T10:28:21Z" duration-ms="9" status="PASS">
+        </test-method>
+      </class>
+      <class name="com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator">
+        <test-method signature="ctorWithIntervalAndUnitsAndStart()" started-at="2021-11-30T10:28:22Z" name="ctorWithIntervalAndUnitsAndStart" finished-at="2021-11-30T10:28:22Z" duration-ms="0" status="PASS">
+        </test-method>
+        <test-method signature="defaultCtor()" started-at="2021-11-30T10:28:22Z" name="defaultCtor" finished-at="2021-11-30T10:28:22Z" duration-ms="1" status="PASS">
+        </test-method>
+        <test-method signature="ctorWithIntervalAndUnits()" started-at="2021-11-30T10:28:22Z" name="ctorWithIntervalAndUnits" finished-at="2021-11-30T10:28:22Z" duration-ms="0" status="PASS">
+        </test-method>
+        <test-method signature="variousIntervalsAndUnits()" started-at="2021-11-30T10:28:22Z" name="variousIntervalsAndUnits" finished-at="2021-11-30T10:28:22Z" duration-ms="0" status="PASS">
+        </test-method>
+      </class>
+      <class name="com.yahoo.ycsb.measurements.exporter.TestMeasurementsExporter">
+        <test-method signature="testJSONArrayMeasurementsExporter()" started-at="2021-11-30T10:28:22Z" name="testJSONArrayMeasurementsExporter" finished-at="2021-11-30T10:28:22Z" duration-ms="207" status="PASS">
+        </test-method>
+      </class>
+      <class name="com.yahoo.ycsb.TestStatus">
+        <test-method signature="testAcceptableStatus()" started-at="2021-11-30T10:28:21Z" name="testAcceptableStatus" finished-at="2021-11-30T10:28:21Z" duration-ms="2" status="PASS">
+        </test-method>
+      </class>
+      <class name="com.yahoo.ycsb.generator.TestZipfianGenerator">
+        <test-method signature="testMinAndMaxParameter()" started-at="2021-11-30T10:28:22Z" name="testMinAndMaxParameter" finished-at="2021-11-30T10:28:22Z" duration-ms="6" status="PASS">
+        </test-method>
+      </class>
+      <class name="com.yahoo.ycsb.generator.AcknowledgedCounterGeneratorTest">
+        <test-method signature="testIncrementPastIntegerMaxValue()" started-at="2021-11-30T10:28:21Z" name="testIncrementPastIntegerMaxValue" finished-at="2021-11-30T10:28:21Z" duration-ms="590" status="PASS">
+        </test-method>
+      </class>
+      <class name="com.yahoo.ycsb.workloads.TestTimeSeriesWorkload">
+        <test-method signature="badTimeUnit()" started-at="2021-11-30T10:28:22Z" name="badTimeUnit" finished-at="2021-11-30T10:28:22Z" duration-ms="1" status="PASS">
+          <exception class="com.yahoo.ycsb.WorkloadException">
             <message>
               <![CDATA[Unknown time unit type]]>
             </message>
             <full-stacktrace>
-              <![CDATA[site.ycsb.WorkloadException: Unknown time unit type
-	at site.ycsb.workloads.TimeSeriesWorkload.init(TimeSeriesWorkload.java:625)
-	at site.ycsb.workloads.TestTimeSeriesWorkload.getWorkload(TestTimeSeriesWorkload.java:512)
-	at site.ycsb.workloads.TestTimeSeriesWorkload.badTimeUnit(TestTimeSeriesWorkload.java:109)
+              <![CDATA[com.yahoo.ycsb.WorkloadException: Unknown time unit type
+	at com.yahoo.ycsb.workloads.TimeSeriesWorkload.init(TimeSeriesWorkload.java:625)
+	at com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.getWorkload(TestTimeSeriesWorkload.java:512)
+	at com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.badTimeUnit(TestTimeSeriesWorkload.java:109)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,21 +237,21 @@
 Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concurrent.TimeUnit.FOOBAR
 	at java.base/java.lang.Enum.valueOf(Enum.java:273)
 	at java.base/java.util.concurrent.TimeUnit.valueOf(TimeUnit.java:75)
-	at site.ycsb.workloads.TimeSeriesWorkload.init(TimeSeriesWorkload.java:622)
+	at com.yahoo.ycsb.workloads.TimeSeriesWorkload.init(TimeSeriesWorkload.java:622)
 	... 37 more
 ]]>
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method signature="failedToInitThread()" started-at="2021-11-29T21:16:45Z" name="failedToInitThread" finished-at="2021-11-29T21:16:45Z" duration-ms="0" status="PASS">
+        <test-method signature="failedToInitThread()" started-at="2021-11-30T10:28:22Z" name="failedToInitThread" finished-at="2021-11-30T10:28:22Z" duration-ms="2" status="PASS">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[Missing thread state.]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.IllegalStateException: Missing thread state.
-	at site.ycsb.workloads.TimeSeriesWorkload.doInsert(TimeSeriesWorkload.java:699)
-	at site.ycsb.workloads.TestTimeSeriesWorkload.failedToInitThread(TestTimeSeriesWorkload.java:129)
+	at com.yahoo.ycsb.workloads.TimeSeriesWorkload.doInsert(TimeSeriesWorkload.java:696)
+	at com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.failedToInitThread(TestTimeSeriesWorkload.java:129)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,15 +291,17 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method signature="failedToInitWorkloadBeforeThreadInit()" started-at="2021-11-29T21:16:45Z" name="failedToInitWorkloadBeforeThreadInit" finished-at="2021-11-29T21:16:45Z" duration-ms="1" status="PASS">
-          <exception class="site.ycsb.WorkloadException">
+        <test-method signature="insertOneKeyOneTagCardinalityOne()" started-at="2021-11-30T10:28:22Z" name="insertOneKeyOneTagCardinalityOne" finished-at="2021-11-30T10:28:22Z" duration-ms="3" status="PASS">
+        </test-method>
+        <test-method signature="failedToInitWorkloadBeforeThreadInit()" started-at="2021-11-30T10:28:22Z" name="failedToInitWorkloadBeforeThreadInit" finished-at="2021-11-30T10:28:22Z" duration-ms="0" status="PASS">
+          <exception class="com.yahoo.ycsb.WorkloadException">
             <message>
               <![CDATA[Workload has not been initialized.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[site.ycsb.WorkloadException: Workload has not been initialized.
-	at site.ycsb.workloads.TimeSeriesWorkload.initThread(TimeSeriesWorkload.java:691)
-	at site.ycsb.workloads.TestTimeSeriesWorkload.failedToInitWorkloadBeforeThreadInit(TestTimeSeriesWorkload.java:117)
+              <![CDATA[com.yahoo.ycsb.WorkloadException: Workload has not been initialized.
+	at com.yahoo.ycsb.workloads.TimeSeriesWorkload.initThread(TimeSeriesWorkload.java:688)
+	at com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.failedToInitWorkloadBeforeThreadInit(TestTimeSeriesWorkload.java:117)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -157,270 +341,51 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method signature="insertOneKeyOneTagCardinalityOne()" started-at="2021-11-29T21:16:45Z" name="insertOneKeyOneTagCardinalityOne" finished-at="2021-11-29T21:16:45Z" duration-ms="1" status="PASS">
+        <test-method signature="insertOneKeyTwoTagsLowCardinality()" started-at="2021-11-30T10:28:22Z" name="insertOneKeyTwoTagsLowCardinality" finished-at="2021-11-30T10:28:22Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="insertOneKeyTwoTagsLowCardinality()" started-at="2021-11-29T21:16:45Z" name="insertOneKeyTwoTagsLowCardinality" finished-at="2021-11-29T21:16:45Z" duration-ms="1" status="PASS">
+        <test-method signature="insertThreeKeysTwoThreads()" started-at="2021-11-30T10:28:22Z" name="insertThreeKeysTwoThreads" finished-at="2021-11-30T10:28:22Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="insertThreeKeysTwoThreads()" started-at="2021-11-29T21:16:45Z" name="insertThreeKeysTwoThreads" finished-at="2021-11-29T21:16:45Z" duration-ms="2" status="PASS">
+        <test-method signature="insertTwoKeysTwoTagsLowCardinality()" started-at="2021-11-30T10:28:22Z" name="insertTwoKeysTwoTagsLowCardinality" finished-at="2021-11-30T10:28:22Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="insertTwoKeysTwoTagsLowCardinality()" started-at="2021-11-29T21:16:45Z" name="insertTwoKeysTwoTagsLowCardinality" finished-at="2021-11-29T21:16:45Z" duration-ms="1" status="PASS">
+        <test-method signature="insertTwoKeysTwoThreads()" started-at="2021-11-30T10:28:22Z" name="insertTwoKeysTwoThreads" finished-at="2021-11-30T10:28:22Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="insertTwoKeysTwoThreads()" started-at="2021-11-29T21:16:45Z" name="insertTwoKeysTwoThreads" finished-at="2021-11-29T21:16:45Z" duration-ms="1" status="PASS">
+        <test-method signature="insertWithValidation()" started-at="2021-11-30T10:28:22Z" name="insertWithValidation" finished-at="2021-11-30T10:28:22Z" duration-ms="2" status="PASS">
         </test-method>
-        <test-method signature="insertWithValidation()" started-at="2021-11-29T21:16:45Z" name="insertWithValidation" finished-at="2021-11-29T21:16:45Z" duration-ms="2" status="PASS">
+        <test-method signature="read()" started-at="2021-11-30T10:28:22Z" name="read" finished-at="2021-11-30T10:28:22Z" duration-ms="0" status="PASS">
         </test-method>
-        <test-method signature="read()" started-at="2021-11-29T21:16:45Z" name="read" finished-at="2021-11-29T21:16:45Z" duration-ms="1" status="PASS">
+        <test-method signature="validateSettingsDataIntegrity()" started-at="2021-11-30T10:28:22Z" name="validateSettingsDataIntegrity" finished-at="2021-11-30T10:28:22Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="twoThreads()" started-at="2021-11-29T21:16:45Z" name="twoThreads" finished-at="2021-11-29T21:16:45Z" duration-ms="1" status="PASS">
+        <test-method signature="twoThreads()" started-at="2021-11-30T10:28:22Z" name="twoThreads" finished-at="2021-11-30T10:28:22Z" duration-ms="0" status="PASS">
         </test-method>
-        <test-method signature="validateSettingsDataIntegrity()" started-at="2021-11-29T21:16:45Z" name="validateSettingsDataIntegrity" finished-at="2021-11-29T21:16:45Z" duration-ms="2" status="PASS">
-        </test-method>
-        <test-method signature="verifyRow()" started-at="2021-11-29T21:16:45Z" name="verifyRow" finished-at="2021-11-29T21:16:45Z" duration-ms="9" status="PASS">
+        <test-method signature="verifyRow()" started-at="2021-11-30T10:28:22Z" name="verifyRow" finished-at="2021-11-30T10:28:22Z" duration-ms="10" status="PASS">
         </test-method>
       </class>
-      <class name="site.ycsb.generator.TestRandomDiscreteTimestampGenerator">
-        <test-method signature="systemTime()" started-at="2021-11-29T21:16:45Z" name="systemTime" finished-at="2021-11-29T21:16:45Z" duration-ms="1" status="PASS">
+      <class name="com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator">
+        <test-method signature="invalidCharacterSets()" started-at="2021-11-30T10:28:21Z" name="invalidCharacterSets" finished-at="2021-11-30T10:28:21Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="tooLarge()" started-at="2021-11-29T21:16:45Z" name="tooLarge" finished-at="2021-11-29T21:16:45Z" duration-ms="28" status="PASS">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Too many intervals for the in-memory array. The limit is 16777216.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Too many intervals for the in-memory array. The limit is 16777216.
-	at site.ycsb.generator.RandomDiscreteTimestampGenerator.setup(RandomDiscreteTimestampGenerator.java:99)
-	at site.ycsb.generator.RandomDiscreteTimestampGenerator.<init>(RandomDiscreteTimestampGenerator.java:70)
-	at site.ycsb.generator.TestRandomDiscreteTimestampGenerator.tooLarge(TestRandomDiscreteTimestampGenerator.java:69)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
-	at org.testng.TestRunner.privateRun(TestRunner.java:757)
-	at org.testng.TestRunner.run(TestRunner.java:608)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
-	at org.testng.TestNG.run(TestNG.java:999)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception>
+        <test-method signature="invalidLengths()" started-at="2021-11-30T10:28:21Z" name="invalidLengths" finished-at="2021-11-30T10:28:21Z" duration-ms="0" status="PASS">
         </test-method>
-        <test-method signature="withStartTime()" started-at="2021-11-29T21:16:45Z" name="withStartTime" finished-at="2021-11-29T21:16:45Z" duration-ms="0" status="PASS">
+        <test-method signature="rolloverOK()" started-at="2021-11-30T10:28:21Z" name="rolloverOK" finished-at="2021-11-30T10:28:21Z" duration-ms="1" status="PASS">
+        </test-method>
+        <test-method signature="rolloverException()" started-at="2021-11-30T10:28:21Z" name="rolloverException" finished-at="2021-11-30T10:28:21Z" duration-ms="0" status="PASS">
+        </test-method>
+        <test-method signature="rolloverOneCharacterOK()" started-at="2021-11-30T10:28:21Z" name="rolloverOneCharacterOK" finished-at="2021-11-30T10:28:21Z" duration-ms="0" status="PASS">
+        </test-method>
+        <test-method signature="rolloverOneCharacterException()" started-at="2021-11-30T10:28:21Z" name="rolloverOneCharacterException" finished-at="2021-11-30T10:28:21Z" duration-ms="0" status="PASS">
         </test-method>
       </class>
-      <class name="site.ycsb.generator.AcknowledgedCounterGeneratorTest">
-        <test-method signature="testIncrementPastIntegerMaxValue()" started-at="2021-11-29T21:16:44Z" name="testIncrementPastIntegerMaxValue" finished-at="2021-11-29T21:16:45Z" duration-ms="448" status="PASS">
+      <class name="com.yahoo.ycsb.workloads.TestCoreWorkload">
+        <test-method signature="createOperationChooser()" started-at="2021-11-30T10:28:22Z" name="createOperationChooser" finished-at="2021-11-30T10:28:22Z" duration-ms="3" status="PASS">
         </test-method>
-      </class>
-      <class name="site.ycsb.generator.TestUnixEpochTimestampGenerator">
-        <test-method signature="ctorWithIntervalAndUnits()" started-at="2021-11-29T21:16:45Z" name="ctorWithIntervalAndUnits" finished-at="2021-11-29T21:16:45Z" duration-ms="1" status="PASS">
-        </test-method>
-        <test-method signature="ctorWithIntervalAndUnitsAndStart()" started-at="2021-11-29T21:16:45Z" name="ctorWithIntervalAndUnitsAndStart" finished-at="2021-11-29T21:16:45Z" duration-ms="0" status="PASS">
-        </test-method>
-        <test-method signature="defaultCtor()" started-at="2021-11-29T21:16:45Z" name="defaultCtor" finished-at="2021-11-29T21:16:45Z" duration-ms="0" status="PASS">
-        </test-method>
-        <test-method signature="variousIntervalsAndUnits()" started-at="2021-11-29T21:16:45Z" name="variousIntervalsAndUnits" finished-at="2021-11-29T21:16:45Z" duration-ms="1" status="PASS">
-        </test-method>
-      </class>
-      <class name="site.ycsb.measurements.exporter.TestMeasurementsExporter">
-        <test-method signature="testJSONArrayMeasurementsExporter()" started-at="2021-11-29T21:16:45Z" name="testJSONArrayMeasurementsExporter" finished-at="2021-11-29T21:16:45Z" duration-ms="159" status="PASS">
-        </test-method>
-      </class>
-      <class name="site.ycsb.TestNumericByteIterator">
-        <test-method signature="testDouble()" started-at="2021-11-29T21:16:44Z" name="testDouble" finished-at="2021-11-29T21:16:44Z" duration-ms="1" status="PASS">
-        </test-method>
-        <test-method signature="testLong()" started-at="2021-11-29T21:16:44Z" name="testLong" finished-at="2021-11-29T21:16:44Z" duration-ms="1" status="PASS">
-        </test-method>
-      </class>
-      <class name="site.ycsb.TestUtils">
-        <test-method signature="bytesToFromLong()" started-at="2021-11-29T21:16:44Z" name="bytesToFromLong" finished-at="2021-11-29T21:16:44Z" duration-ms="0" status="PASS">
-        </test-method>
-        <test-method signature="bytesToFromDouble()" started-at="2021-11-29T21:16:44Z" name="bytesToFromDouble" finished-at="2021-11-29T21:16:44Z" duration-ms="0" status="PASS">
-        </test-method>
-        <test-method signature="bytesToLongNull()" started-at="2021-11-29T21:16:44Z" name="bytesToLongNull" finished-at="2021-11-29T21:16:44Z" duration-ms="1" status="PASS">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot load from byte/boolean array because "bytes" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot load from byte/boolean array because "bytes" is null
-	at site.ycsb.Utils.bytesToLong(Utils.java:75)
-	at site.ycsb.TestUtils.bytesToLongNull(TestUtils.java:89)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
-	at org.testng.TestRunner.privateRun(TestRunner.java:757)
-	at org.testng.TestRunner.run(TestRunner.java:608)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
-	at org.testng.TestNG.run(TestNG.java:999)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception>
-        </test-method>
-        <test-method signature="bytesToDoubleTooShort()" started-at="2021-11-29T21:16:44Z" name="bytesToDoubleTooShort" finished-at="2021-11-29T21:16:44Z" duration-ms="0" status="PASS">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Byte array must be 8 bytes wide.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Byte array must be 8 bytes wide.
-	at site.ycsb.Utils.bytesToDouble(Utils.java:114)
-	at site.ycsb.TestUtils.bytesToDoubleTooShort(TestUtils.java:99)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
-	at org.testng.TestRunner.privateRun(TestRunner.java:757)
-	at org.testng.TestRunner.run(TestRunner.java:608)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
-	at org.testng.TestNG.run(TestNG.java:999)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception>
-        </test-method>
-        <test-method signature="bytesToLongTooShort()" started-at="2021-11-29T21:16:44Z" name="bytesToLongTooShort" finished-at="2021-11-29T21:16:44Z" duration-ms="0" status="PASS">
-          <exception class="java.lang.ArrayIndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index 7 out of bounds for length 7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
-	at site.ycsb.Utils.bytesToLong(Utils.java:75)
-	at site.ycsb.TestUtils.bytesToLongTooShort(TestUtils.java:94)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
-	at org.testng.TestRunner.privateRun(TestRunner.java:757)
-	at org.testng.TestRunner.run(TestRunner.java:608)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
-	at org.testng.TestNG.run(TestNG.java:999)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception>
-        </test-method>
-        <test-method signature="jvmUtils()" started-at="2021-11-29T21:16:44Z" name="jvmUtils" finished-at="2021-11-29T21:16:44Z" duration-ms="30" status="PASS">
-        </test-method>
-      </class>
-      <class name="site.ycsb.workloads.TestCoreWorkload">
-        <test-method signature="createOperationChooser()" started-at="2021-11-29T21:16:45Z" name="createOperationChooser" finished-at="2021-11-29T21:16:45Z" duration-ms="2" status="PASS">
-        </test-method>
-        <test-method signature="createOperationChooserNullProperties()" started-at="2021-11-29T21:16:45Z" name="createOperationChooserNullProperties" finished-at="2021-11-29T21:16:45Z" duration-ms="1" status="PASS">
+        <test-method signature="createOperationChooserNullProperties()" started-at="2021-11-30T10:28:22Z" name="createOperationChooserNullProperties" finished-at="2021-11-30T10:28:22Z" duration-ms="0" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Properties object cannot be null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.IllegalArgumentException: Properties object cannot be null
-	at site.ycsb.workloads.CoreWorkload.createOperationGenerator(CoreWorkload.java:863)
-	at site.ycsb.workloads.TestCoreWorkload.createOperationChooserNullProperties(TestCoreWorkload.java:68)
+	at com.yahoo.ycsb.workloads.CoreWorkload.createOperationGenerator(CoreWorkload.java:804)
+	at com.yahoo.ycsb.workloads.TestCoreWorkload.createOperationChooserNullProperties(TestCoreWorkload.java:68)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -461,30 +426,65 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
           </exception>
         </test-method>
       </class>
-      <class name="site.ycsb.generator.TestZipfianGenerator">
-        <test-method signature="testMinAndMaxParameter()" started-at="2021-11-29T21:16:45Z" name="testMinAndMaxParameter" finished-at="2021-11-29T21:16:45Z" duration-ms="4" status="PASS">
+      <class name="com.yahoo.ycsb.TestNumericByteIterator">
+        <test-method signature="testDouble()" started-at="2021-11-30T10:28:21Z" name="testDouble" finished-at="2021-11-30T10:28:21Z" duration-ms="1" status="PASS">
+        </test-method>
+        <test-method signature="testLong()" started-at="2021-11-30T10:28:21Z" name="testLong" finished-at="2021-11-30T10:28:21Z" duration-ms="0" status="PASS">
         </test-method>
       </class>
-      <class name="site.ycsb.generator.TestIncrementingPrintableStringGenerator">
-        <test-method signature="invalidCharacterSets()" started-at="2021-11-29T21:16:45Z" name="invalidCharacterSets" finished-at="2021-11-29T21:16:45Z" duration-ms="1" status="PASS">
+      <class name="com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator">
+        <test-method signature="systemTime()" started-at="2021-11-30T10:28:21Z" name="systemTime" finished-at="2021-11-30T10:28:21Z" duration-ms="2" status="PASS">
         </test-method>
-        <test-method signature="invalidLengths()" started-at="2021-11-29T21:16:45Z" name="invalidLengths" finished-at="2021-11-29T21:16:45Z" duration-ms="0" status="PASS">
+        <test-method signature="tooLarge()" started-at="2021-11-30T10:28:21Z" name="tooLarge" finished-at="2021-11-30T10:28:22Z" duration-ms="29" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Too many intervals for the in-memory array. The limit is 16777216.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Too many intervals for the in-memory array. The limit is 16777216.
+	at com.yahoo.ycsb.generator.RandomDiscreteTimestampGenerator.setup(RandomDiscreteTimestampGenerator.java:99)
+	at com.yahoo.ycsb.generator.RandomDiscreteTimestampGenerator.<init>(RandomDiscreteTimestampGenerator.java:70)
+	at com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator.tooLarge(TestRandomDiscreteTimestampGenerator.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
         </test-method>
-        <test-method signature="rolloverException()" started-at="2021-11-29T21:16:45Z" name="rolloverException" finished-at="2021-11-29T21:16:45Z" duration-ms="0" status="PASS">
-        </test-method>
-        <test-method signature="rolloverOK()" started-at="2021-11-29T21:16:45Z" name="rolloverOK" finished-at="2021-11-29T21:16:45Z" duration-ms="0" status="PASS">
-        </test-method>
-        <test-method signature="rolloverOneCharacterOK()" started-at="2021-11-29T21:16:45Z" name="rolloverOneCharacterOK" finished-at="2021-11-29T21:16:45Z" duration-ms="0" status="PASS">
-        </test-method>
-        <test-method signature="rolloverOneCharacterException()" started-at="2021-11-29T21:16:45Z" name="rolloverOneCharacterException" finished-at="2021-11-29T21:16:45Z" duration-ms="0" status="PASS">
-        </test-method>
-      </class>
-      <class name="site.ycsb.TestStatus">
-        <test-method signature="testAcceptableStatus()" started-at="2021-11-29T21:16:44Z" name="testAcceptableStatus" finished-at="2021-11-29T21:16:44Z" duration-ms="1" status="PASS">
-        </test-method>
-      </class>
-      <class name="site.ycsb.TestByteIterator">
-        <test-method signature="testRandomByteIterator()" started-at="2021-11-29T21:16:44Z" name="testRandomByteIterator" finished-at="2021-11-29T21:16:44Z" duration-ms="5" status="PASS">
+        <test-method signature="withStartTime()" started-at="2021-11-30T10:28:22Z" name="withStartTime" finished-at="2021-11-30T10:28:22Z" duration-ms="1" status="PASS">
         </test-method>
       </class>
     </test>

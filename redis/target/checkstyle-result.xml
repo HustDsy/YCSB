@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="6.2">
-<file name="/Users/dongshenyu/Documents/Codes/YCSB/redis/src/main/java/site/ycsb/db/RedisClient.java">
+<file name="/Users/dongshenyu/Documents/Codes/YCSB/redis/src/main/java/com/yahoo/ycsb/db/RedisClient.java">
 </file>
-<file name="/Users/dongshenyu/Documents/Codes/YCSB/redis/src/main/java/site/ycsb/db/package-info.java">
+<file name="/Users/dongshenyu/Documents/Codes/YCSB/redis/src/main/java/com/yahoo/ycsb/db/package-info.java">
 </file>
 </checkstyle>

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>41/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 29 21:16:44 CST 2021</td>
+<td>Started on:</td><td>Tue Nov 30 10:28:21 CST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (717 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (960 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,11 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='site.ycsb.workloads.TestTimeSeriesWorkload.badTimeUnit()'><b>badTimeUnit</b><br>Test class: site.ycsb.workloads.TestTimeSeriesWorkload</td>
-<td><div><pre>site.ycsb.WorkloadException: Unknown time unit type
-	at site.ycsb.workloads.TimeSeriesWorkload.init(TimeSeriesWorkload.java:625)
-	at site.ycsb.workloads.TestTimeSeriesWorkload.getWorkload(TestTimeSeriesWorkload.java:512)
-	at site.ycsb.workloads.TestTimeSeriesWorkload.badTimeUnit(TestTimeSeriesWorkload.java:109)
+<td title='com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.badTimeUnit()'><b>badTimeUnit</b><br>Test class: com.yahoo.ycsb.workloads.TestTimeSeriesWorkload</td>
+<td><div><pre>com.yahoo.ycsb.WorkloadException: Unknown time unit type
+	at com.yahoo.ycsb.workloads.TimeSeriesWorkload.init(TimeSeriesWorkload.java:625)
+	at com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.getWorkload(TestTimeSeriesWorkload.java:512)
+	at com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.badTimeUnit(TestTimeSeriesWorkload.java:109)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -92,13 +92,13 @@ function toggleAllBoxes() {
 Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concurrent.TimeUnit.FOOBAR
 	at java.base/java.lang.Enum.valueOf(Enum.java:273)
 	at java.base/java.util.concurrent.TimeUnit.valueOf(TimeUnit.java:75)
-	at site.ycsb.workloads.TimeSeriesWorkload.init(TimeSeriesWorkload.java:622)
+	at com.yahoo.ycsb.workloads.TimeSeriesWorkload.init(TimeSeriesWorkload.java:622)
 	... 37 more
 ... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace447212746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace447212746'><pre>site.ycsb.WorkloadException: Unknown time unit type
-	at site.ycsb.workloads.TimeSeriesWorkload.init(TimeSeriesWorkload.java:625)
-	at site.ycsb.workloads.TestTimeSeriesWorkload.getWorkload(TestTimeSeriesWorkload.java:512)
-	at site.ycsb.workloads.TestTimeSeriesWorkload.badTimeUnit(TestTimeSeriesWorkload.java:109)
+<div class='stack-trace' id='stack-trace447212746'><pre>com.yahoo.ycsb.WorkloadException: Unknown time unit type
+	at com.yahoo.ycsb.workloads.TimeSeriesWorkload.init(TimeSeriesWorkload.java:625)
+	at com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.getWorkload(TestTimeSeriesWorkload.java:512)
+	at com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.badTimeUnit(TestTimeSeriesWorkload.java:109)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -137,16 +137,16 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concurrent.TimeUnit.FOOBAR
 	at java.base/java.lang.Enum.valueOf(Enum.java:273)
 	at java.base/java.util.concurrent.TimeUnit.valueOf(TimeUnit.java:75)
-	at site.ycsb.workloads.TimeSeriesWorkload.init(TimeSeriesWorkload.java:622)
+	at com.yahoo.ycsb.workloads.TimeSeriesWorkload.init(TimeSeriesWorkload.java:622)
 	... 37 more
 </pre></div></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
+<td>com.yahoo.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
 <tr>
-<td title='site.ycsb.TestUtils.bytesToDoubleTooShort()'><b>bytesToDoubleTooShort</b><br>Test class: site.ycsb.TestUtils</td>
+<td title='com.yahoo.ycsb.TestUtils.bytesToDoubleTooShort()'><b>bytesToDoubleTooShort</b><br>Test class: com.yahoo.ycsb.TestUtils</td>
 <td><div><pre>java.lang.IllegalArgumentException: Byte array must be 8 bytes wide.
-	at site.ycsb.Utils.bytesToDouble(Utils.java:114)
-	at site.ycsb.TestUtils.bytesToDoubleTooShort(TestUtils.java:99)
+	at com.yahoo.ycsb.Utils.bytesToDouble(Utils.java:114)
+	at com.yahoo.ycsb.TestUtils.bytesToDoubleTooShort(TestUtils.java:99)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -158,8 +158,8 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 ... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1032986144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace1032986144'><pre>java.lang.IllegalArgumentException: Byte array must be 8 bytes wide.
-	at site.ycsb.Utils.bytesToDouble(Utils.java:114)
-	at site.ycsb.TestUtils.bytesToDoubleTooShort(TestUtils.java:99)
+	at com.yahoo.ycsb.Utils.bytesToDouble(Utils.java:114)
+	at com.yahoo.ycsb.TestUtils.bytesToDoubleTooShort(TestUtils.java:99)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -197,22 +197,22 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </pre></div></td>
 <td>0</td>
-<td>site.ycsb.TestUtils@65e2dbf3</td></tr>
+<td>com.yahoo.ycsb.TestUtils@65e2dbf3</td></tr>
 <tr>
-<td title='site.ycsb.TestUtils.bytesToFromDouble()'><b>bytesToFromDouble</b><br>Test class: site.ycsb.TestUtils</td>
+<td title='com.yahoo.ycsb.TestUtils.bytesToFromDouble()'><b>bytesToFromDouble</b><br>Test class: com.yahoo.ycsb.TestUtils</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.TestUtils@65e2dbf3</td></tr>
+<td>com.yahoo.ycsb.TestUtils@65e2dbf3</td></tr>
 <tr>
-<td title='site.ycsb.TestUtils.bytesToFromLong()'><b>bytesToFromLong</b><br>Test class: site.ycsb.TestUtils</td>
+<td title='com.yahoo.ycsb.TestUtils.bytesToFromLong()'><b>bytesToFromLong</b><br>Test class: com.yahoo.ycsb.TestUtils</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.TestUtils@65e2dbf3</td></tr>
+<td>com.yahoo.ycsb.TestUtils@65e2dbf3</td></tr>
 <tr>
-<td title='site.ycsb.TestUtils.bytesToLongNull()'><b>bytesToLongNull</b><br>Test class: site.ycsb.TestUtils</td>
+<td title='com.yahoo.ycsb.TestUtils.bytesToLongNull()'><b>bytesToLongNull</b><br>Test class: com.yahoo.ycsb.TestUtils</td>
 <td><div><pre>java.lang.NullPointerException: Cannot load from byte/boolean array because &quot;bytes&quot; is null
-	at site.ycsb.Utils.bytesToLong(Utils.java:75)
-	at site.ycsb.TestUtils.bytesToLongNull(TestUtils.java:89)
+	at com.yahoo.ycsb.Utils.bytesToLong(Utils.java:75)
+	at com.yahoo.ycsb.TestUtils.bytesToLongNull(TestUtils.java:89)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -224,8 +224,8 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 ... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace438135304", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace438135304'><pre>java.lang.NullPointerException: Cannot load from byte/boolean array because "bytes" is null
-	at site.ycsb.Utils.bytesToLong(Utils.java:75)
-	at site.ycsb.TestUtils.bytesToLongNull(TestUtils.java:89)
+	at com.yahoo.ycsb.Utils.bytesToLong(Utils.java:75)
+	at com.yahoo.ycsb.TestUtils.bytesToLongNull(TestUtils.java:89)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -263,12 +263,12 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </pre></div></td>
 <td>0</td>
-<td>site.ycsb.TestUtils@65e2dbf3</td></tr>
+<td>com.yahoo.ycsb.TestUtils@65e2dbf3</td></tr>
 <tr>
-<td title='site.ycsb.TestUtils.bytesToLongTooShort()'><b>bytesToLongTooShort</b><br>Test class: site.ycsb.TestUtils</td>
+<td title='com.yahoo.ycsb.TestUtils.bytesToLongTooShort()'><b>bytesToLongTooShort</b><br>Test class: com.yahoo.ycsb.TestUtils</td>
 <td><div><pre>java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
-	at site.ycsb.Utils.bytesToLong(Utils.java:75)
-	at site.ycsb.TestUtils.bytesToLongTooShort(TestUtils.java:94)
+	at com.yahoo.ycsb.Utils.bytesToLong(Utils.java:75)
+	at com.yahoo.ycsb.TestUtils.bytesToLongTooShort(TestUtils.java:94)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -280,8 +280,8 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 ... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace936580213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace936580213'><pre>java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
-	at site.ycsb.Utils.bytesToLong(Utils.java:75)
-	at site.ycsb.TestUtils.bytesToLongTooShort(TestUtils.java:94)
+	at com.yahoo.ycsb.Utils.bytesToLong(Utils.java:75)
+	at com.yahoo.ycsb.TestUtils.bytesToLongTooShort(TestUtils.java:94)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -319,17 +319,17 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </pre></div></td>
 <td>0</td>
-<td>site.ycsb.TestUtils@65e2dbf3</td></tr>
+<td>com.yahoo.ycsb.TestUtils@65e2dbf3</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestCoreWorkload.createOperationChooser()'><b>createOperationChooser</b><br>Test class: site.ycsb.workloads.TestCoreWorkload</td>
+<td title='com.yahoo.ycsb.workloads.TestCoreWorkload.createOperationChooser()'><b>createOperationChooser</b><br>Test class: com.yahoo.ycsb.workloads.TestCoreWorkload</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestCoreWorkload@6e0e048a</td></tr>
+<td>com.yahoo.ycsb.workloads.TestCoreWorkload@6e0e048a</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestCoreWorkload.createOperationChooserNullProperties()'><b>createOperationChooserNullProperties</b><br>Test class: site.ycsb.workloads.TestCoreWorkload</td>
+<td title='com.yahoo.ycsb.workloads.TestCoreWorkload.createOperationChooserNullProperties()'><b>createOperationChooserNullProperties</b><br>Test class: com.yahoo.ycsb.workloads.TestCoreWorkload</td>
 <td><div><pre>java.lang.IllegalArgumentException: Properties object cannot be null
-	at site.ycsb.workloads.CoreWorkload.createOperationGenerator(CoreWorkload.java:863)
-	at site.ycsb.workloads.TestCoreWorkload.createOperationChooserNullProperties(TestCoreWorkload.java:68)
+	at com.yahoo.ycsb.workloads.CoreWorkload.createOperationGenerator(CoreWorkload.java:804)
+	at com.yahoo.ycsb.workloads.TestCoreWorkload.createOperationChooserNullProperties(TestCoreWorkload.java:68)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -341,8 +341,8 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 ... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1741979653", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace1741979653'><pre>java.lang.IllegalArgumentException: Properties object cannot be null
-	at site.ycsb.workloads.CoreWorkload.createOperationGenerator(CoreWorkload.java:863)
-	at site.ycsb.workloads.TestCoreWorkload.createOperationChooserNullProperties(TestCoreWorkload.java:68)
+	at com.yahoo.ycsb.workloads.CoreWorkload.createOperationGenerator(CoreWorkload.java:804)
+	at com.yahoo.ycsb.workloads.TestCoreWorkload.createOperationChooserNullProperties(TestCoreWorkload.java:68)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -380,27 +380,27 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </pre></div></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestCoreWorkload@6e0e048a</td></tr>
+<td>com.yahoo.ycsb.workloads.TestCoreWorkload@6e0e048a</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestUnixEpochTimestampGenerator.ctorWithIntervalAndUnits()'><b>ctorWithIntervalAndUnits</b><br>Test class: site.ycsb.generator.TestUnixEpochTimestampGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator.ctorWithIntervalAndUnits()'><b>ctorWithIntervalAndUnits</b><br>Test class: com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.TestUnixEpochTimestampGenerator@887af79</td></tr>
+<td>com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator@887af79</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestUnixEpochTimestampGenerator.ctorWithIntervalAndUnitsAndStart()'><b>ctorWithIntervalAndUnitsAndStart</b><br>Test class: site.ycsb.generator.TestUnixEpochTimestampGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator.ctorWithIntervalAndUnitsAndStart()'><b>ctorWithIntervalAndUnitsAndStart</b><br>Test class: com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.TestUnixEpochTimestampGenerator@887af79</td></tr>
+<td>com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator@887af79</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestUnixEpochTimestampGenerator.defaultCtor()'><b>defaultCtor</b><br>Test class: site.ycsb.generator.TestUnixEpochTimestampGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator.defaultCtor()'><b>defaultCtor</b><br>Test class: com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.TestUnixEpochTimestampGenerator@887af79</td></tr>
+<td>com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator@887af79</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestTimeSeriesWorkload.failedToInitThread()'><b>failedToInitThread</b><br>Test class: site.ycsb.workloads.TestTimeSeriesWorkload</td>
+<td title='com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.failedToInitThread()'><b>failedToInitThread</b><br>Test class: com.yahoo.ycsb.workloads.TestTimeSeriesWorkload</td>
 <td><div><pre>java.lang.IllegalStateException: Missing thread state.
-	at site.ycsb.workloads.TimeSeriesWorkload.doInsert(TimeSeriesWorkload.java:699)
-	at site.ycsb.workloads.TestTimeSeriesWorkload.failedToInitThread(TestTimeSeriesWorkload.java:129)
+	at com.yahoo.ycsb.workloads.TimeSeriesWorkload.doInsert(TimeSeriesWorkload.java:696)
+	at com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.failedToInitThread(TestTimeSeriesWorkload.java:129)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -412,8 +412,8 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 ... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1529060733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace1529060733'><pre>java.lang.IllegalStateException: Missing thread state.
-	at site.ycsb.workloads.TimeSeriesWorkload.doInsert(TimeSeriesWorkload.java:699)
-	at site.ycsb.workloads.TestTimeSeriesWorkload.failedToInitThread(TestTimeSeriesWorkload.java:129)
+	at com.yahoo.ycsb.workloads.TimeSeriesWorkload.doInsert(TimeSeriesWorkload.java:696)
+	at com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.failedToInitThread(TestTimeSeriesWorkload.java:129)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -451,12 +451,12 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </pre></div></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
+<td>com.yahoo.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestTimeSeriesWorkload.failedToInitWorkloadBeforeThreadInit()'><b>failedToInitWorkloadBeforeThreadInit</b><br>Test class: site.ycsb.workloads.TestTimeSeriesWorkload</td>
-<td><div><pre>site.ycsb.WorkloadException: Workload has not been initialized.
-	at site.ycsb.workloads.TimeSeriesWorkload.initThread(TimeSeriesWorkload.java:691)
-	at site.ycsb.workloads.TestTimeSeriesWorkload.failedToInitWorkloadBeforeThreadInit(TestTimeSeriesWorkload.java:117)
+<td title='com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.failedToInitWorkloadBeforeThreadInit()'><b>failedToInitWorkloadBeforeThreadInit</b><br>Test class: com.yahoo.ycsb.workloads.TestTimeSeriesWorkload</td>
+<td><div><pre>com.yahoo.ycsb.WorkloadException: Workload has not been initialized.
+	at com.yahoo.ycsb.workloads.TimeSeriesWorkload.initThread(TimeSeriesWorkload.java:688)
+	at com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.failedToInitWorkloadBeforeThreadInit(TestTimeSeriesWorkload.java:117)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -467,9 +467,9 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 ... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace106374177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace106374177'><pre>site.ycsb.WorkloadException: Workload has not been initialized.
-	at site.ycsb.workloads.TimeSeriesWorkload.initThread(TimeSeriesWorkload.java:691)
-	at site.ycsb.workloads.TestTimeSeriesWorkload.failedToInitWorkloadBeforeThreadInit(TestTimeSeriesWorkload.java:117)
+<div class='stack-trace' id='stack-trace106374177'><pre>com.yahoo.ycsb.WorkloadException: Workload has not been initialized.
+	at com.yahoo.ycsb.workloads.TimeSeriesWorkload.initThread(TimeSeriesWorkload.java:688)
+	at com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.failedToInitWorkloadBeforeThreadInit(TestTimeSeriesWorkload.java:117)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -507,123 +507,123 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </pre></div></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
+<td>com.yahoo.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestTimeSeriesWorkload.insertOneKeyOneTagCardinalityOne()'><b>insertOneKeyOneTagCardinalityOne</b><br>Test class: site.ycsb.workloads.TestTimeSeriesWorkload</td>
+<td title='com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.insertOneKeyOneTagCardinalityOne()'><b>insertOneKeyOneTagCardinalityOne</b><br>Test class: com.yahoo.ycsb.workloads.TestTimeSeriesWorkload</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
+<td>com.yahoo.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestTimeSeriesWorkload.insertOneKeyTwoTagsLowCardinality()'><b>insertOneKeyTwoTagsLowCardinality</b><br>Test class: site.ycsb.workloads.TestTimeSeriesWorkload</td>
+<td title='com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.insertOneKeyTwoTagsLowCardinality()'><b>insertOneKeyTwoTagsLowCardinality</b><br>Test class: com.yahoo.ycsb.workloads.TestTimeSeriesWorkload</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
+<td>com.yahoo.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestTimeSeriesWorkload.insertThreeKeysTwoThreads()'><b>insertThreeKeysTwoThreads</b><br>Test class: site.ycsb.workloads.TestTimeSeriesWorkload</td>
+<td title='com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.insertThreeKeysTwoThreads()'><b>insertThreeKeysTwoThreads</b><br>Test class: com.yahoo.ycsb.workloads.TestTimeSeriesWorkload</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
+<td>com.yahoo.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestTimeSeriesWorkload.insertTwoKeysTwoTagsLowCardinality()'><b>insertTwoKeysTwoTagsLowCardinality</b><br>Test class: site.ycsb.workloads.TestTimeSeriesWorkload</td>
+<td title='com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.insertTwoKeysTwoTagsLowCardinality()'><b>insertTwoKeysTwoTagsLowCardinality</b><br>Test class: com.yahoo.ycsb.workloads.TestTimeSeriesWorkload</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
+<td>com.yahoo.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestTimeSeriesWorkload.insertTwoKeysTwoThreads()'><b>insertTwoKeysTwoThreads</b><br>Test class: site.ycsb.workloads.TestTimeSeriesWorkload</td>
+<td title='com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.insertTwoKeysTwoThreads()'><b>insertTwoKeysTwoThreads</b><br>Test class: com.yahoo.ycsb.workloads.TestTimeSeriesWorkload</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
+<td>com.yahoo.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestTimeSeriesWorkload.insertWithValidation()'><b>insertWithValidation</b><br>Test class: site.ycsb.workloads.TestTimeSeriesWorkload</td>
+<td title='com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.insertWithValidation()'><b>insertWithValidation</b><br>Test class: com.yahoo.ycsb.workloads.TestTimeSeriesWorkload</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
+<td>com.yahoo.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestIncrementingPrintableStringGenerator.invalidCharacterSets()'><b>invalidCharacterSets</b><br>Test class: site.ycsb.generator.TestIncrementingPrintableStringGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator.invalidCharacterSets()'><b>invalidCharacterSets</b><br>Test class: com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.TestIncrementingPrintableStringGenerator@61f8bee4</td></tr>
+<td>com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator@61f8bee4</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestIncrementingPrintableStringGenerator.invalidLengths()'><b>invalidLengths</b><br>Test class: site.ycsb.generator.TestIncrementingPrintableStringGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator.invalidLengths()'><b>invalidLengths</b><br>Test class: com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.TestIncrementingPrintableStringGenerator@61f8bee4</td></tr>
+<td>com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator@61f8bee4</td></tr>
 <tr>
-<td title='site.ycsb.TestUtils.jvmUtils()'><b>jvmUtils</b><br>Test class: site.ycsb.TestUtils</td>
+<td title='com.yahoo.ycsb.TestUtils.jvmUtils()'><b>jvmUtils</b><br>Test class: com.yahoo.ycsb.TestUtils</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.TestUtils@65e2dbf3</td></tr>
+<td>com.yahoo.ycsb.TestUtils@65e2dbf3</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestTimeSeriesWorkload.read()'><b>read</b><br>Test class: site.ycsb.workloads.TestTimeSeriesWorkload</td>
+<td title='com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.read()'><b>read</b><br>Test class: com.yahoo.ycsb.workloads.TestTimeSeriesWorkload</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
+<td>com.yahoo.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestIncrementingPrintableStringGenerator.rolloverException()'><b>rolloverException</b><br>Test class: site.ycsb.generator.TestIncrementingPrintableStringGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator.rolloverException()'><b>rolloverException</b><br>Test class: com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.TestIncrementingPrintableStringGenerator@61f8bee4</td></tr>
+<td>com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator@61f8bee4</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestIncrementingPrintableStringGenerator.rolloverOK()'><b>rolloverOK</b><br>Test class: site.ycsb.generator.TestIncrementingPrintableStringGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator.rolloverOK()'><b>rolloverOK</b><br>Test class: com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.TestIncrementingPrintableStringGenerator@61f8bee4</td></tr>
+<td>com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator@61f8bee4</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestIncrementingPrintableStringGenerator.rolloverOneCharacterException()'><b>rolloverOneCharacterException</b><br>Test class: site.ycsb.generator.TestIncrementingPrintableStringGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator.rolloverOneCharacterException()'><b>rolloverOneCharacterException</b><br>Test class: com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.TestIncrementingPrintableStringGenerator@61f8bee4</td></tr>
+<td>com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator@61f8bee4</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestIncrementingPrintableStringGenerator.rolloverOneCharacterOK()'><b>rolloverOneCharacterOK</b><br>Test class: site.ycsb.generator.TestIncrementingPrintableStringGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator.rolloverOneCharacterOK()'><b>rolloverOneCharacterOK</b><br>Test class: com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.TestIncrementingPrintableStringGenerator@61f8bee4</td></tr>
+<td>com.yahoo.ycsb.generator.TestIncrementingPrintableStringGenerator@61f8bee4</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestRandomDiscreteTimestampGenerator.systemTime()'><b>systemTime</b><br>Test class: site.ycsb.generator.TestRandomDiscreteTimestampGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator.systemTime()'><b>systemTime</b><br>Test class: com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.TestRandomDiscreteTimestampGenerator@7b49cea0</td></tr>
+<td>com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator@7b49cea0</td></tr>
 <tr>
-<td title='site.ycsb.TestStatus.testAcceptableStatus()'><b>testAcceptableStatus</b><br>Test class: site.ycsb.TestStatus</td>
+<td title='com.yahoo.ycsb.TestStatus.testAcceptableStatus()'><b>testAcceptableStatus</b><br>Test class: com.yahoo.ycsb.TestStatus</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.TestStatus@2b9627bc</td></tr>
+<td>com.yahoo.ycsb.TestStatus@2b9627bc</td></tr>
 <tr>
-<td title='site.ycsb.TestNumericByteIterator.testDouble()'><b>testDouble</b><br>Test class: site.ycsb.TestNumericByteIterator</td>
+<td title='com.yahoo.ycsb.TestNumericByteIterator.testDouble()'><b>testDouble</b><br>Test class: com.yahoo.ycsb.TestNumericByteIterator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.TestNumericByteIterator@67b92f0a</td></tr>
+<td>com.yahoo.ycsb.TestNumericByteIterator@67b92f0a</td></tr>
 <tr>
-<td title='site.ycsb.generator.AcknowledgedCounterGeneratorTest.testIncrementPastIntegerMaxValue()'><b>testIncrementPastIntegerMaxValue</b><br>Test class: site.ycsb.generator.AcknowledgedCounterGeneratorTest</td>
+<td title='com.yahoo.ycsb.generator.AcknowledgedCounterGeneratorTest.testIncrementPastIntegerMaxValue()'><b>testIncrementPastIntegerMaxValue</b><br>Test class: com.yahoo.ycsb.generator.AcknowledgedCounterGeneratorTest</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.AcknowledgedCounterGeneratorTest@4f970963</td></tr>
+<td>com.yahoo.ycsb.generator.AcknowledgedCounterGeneratorTest@4f970963</td></tr>
 <tr>
-<td title='site.ycsb.measurements.exporter.TestMeasurementsExporter.testJSONArrayMeasurementsExporter()'><b>testJSONArrayMeasurementsExporter</b><br>Test class: site.ycsb.measurements.exporter.TestMeasurementsExporter</td>
+<td title='com.yahoo.ycsb.measurements.exporter.TestMeasurementsExporter.testJSONArrayMeasurementsExporter()'><b>testJSONArrayMeasurementsExporter</b><br>Test class: com.yahoo.ycsb.measurements.exporter.TestMeasurementsExporter</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.measurements.exporter.TestMeasurementsExporter@5b87ed94</td></tr>
+<td>com.yahoo.ycsb.measurements.exporter.TestMeasurementsExporter@5b87ed94</td></tr>
 <tr>
-<td title='site.ycsb.TestNumericByteIterator.testLong()'><b>testLong</b><br>Test class: site.ycsb.TestNumericByteIterator</td>
+<td title='com.yahoo.ycsb.TestNumericByteIterator.testLong()'><b>testLong</b><br>Test class: com.yahoo.ycsb.TestNumericByteIterator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.TestNumericByteIterator@67b92f0a</td></tr>
+<td>com.yahoo.ycsb.TestNumericByteIterator@67b92f0a</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestZipfianGenerator.testMinAndMaxParameter()'><b>testMinAndMaxParameter</b><br>Test class: site.ycsb.generator.TestZipfianGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestZipfianGenerator.testMinAndMaxParameter()'><b>testMinAndMaxParameter</b><br>Test class: com.yahoo.ycsb.generator.TestZipfianGenerator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.TestZipfianGenerator@7fac631b</td></tr>
+<td>com.yahoo.ycsb.generator.TestZipfianGenerator@7fac631b</td></tr>
 <tr>
-<td title='site.ycsb.TestByteIterator.testRandomByteIterator()'><b>testRandomByteIterator</b><br>Test class: site.ycsb.TestByteIterator</td>
+<td title='com.yahoo.ycsb.TestByteIterator.testRandomByteIterator()'><b>testRandomByteIterator</b><br>Test class: com.yahoo.ycsb.TestByteIterator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.TestByteIterator@1d16f93d</td></tr>
+<td>com.yahoo.ycsb.TestByteIterator@1d16f93d</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestRandomDiscreteTimestampGenerator.tooLarge()'><b>tooLarge</b><br>Test class: site.ycsb.generator.TestRandomDiscreteTimestampGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator.tooLarge()'><b>tooLarge</b><br>Test class: com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator</td>
 <td><div><pre>java.lang.IllegalArgumentException: Too many intervals for the in-memory array. The limit is 16777216.
-	at site.ycsb.generator.RandomDiscreteTimestampGenerator.setup(RandomDiscreteTimestampGenerator.java:99)
-	at site.ycsb.generator.RandomDiscreteTimestampGenerator.&lt;init&gt;(RandomDiscreteTimestampGenerator.java:70)
-	at site.ycsb.generator.TestRandomDiscreteTimestampGenerator.tooLarge(TestRandomDiscreteTimestampGenerator.java:69)
+	at com.yahoo.ycsb.generator.RandomDiscreteTimestampGenerator.setup(RandomDiscreteTimestampGenerator.java:99)
+	at com.yahoo.ycsb.generator.RandomDiscreteTimestampGenerator.&lt;init&gt;(RandomDiscreteTimestampGenerator.java:70)
+	at com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator.tooLarge(TestRandomDiscreteTimestampGenerator.java:69)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
@@ -635,9 +635,9 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 ... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1372082959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace1372082959'><pre>java.lang.IllegalArgumentException: Too many intervals for the in-memory array. The limit is 16777216.
-	at site.ycsb.generator.RandomDiscreteTimestampGenerator.setup(RandomDiscreteTimestampGenerator.java:99)
-	at site.ycsb.generator.RandomDiscreteTimestampGenerator.&lt;init&gt;(RandomDiscreteTimestampGenerator.java:70)
-	at site.ycsb.generator.TestRandomDiscreteTimestampGenerator.tooLarge(TestRandomDiscreteTimestampGenerator.java:69)
+	at com.yahoo.ycsb.generator.RandomDiscreteTimestampGenerator.setup(RandomDiscreteTimestampGenerator.java:99)
+	at com.yahoo.ycsb.generator.RandomDiscreteTimestampGenerator.&lt;init&gt;(RandomDiscreteTimestampGenerator.java:70)
+	at com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator.tooLarge(TestRandomDiscreteTimestampGenerator.java:69)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -675,32 +675,32 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </pre></div></td>
 <td>0</td>
-<td>site.ycsb.generator.TestRandomDiscreteTimestampGenerator@7b49cea0</td></tr>
+<td>com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator@7b49cea0</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestTimeSeriesWorkload.twoThreads()'><b>twoThreads</b><br>Test class: site.ycsb.workloads.TestTimeSeriesWorkload</td>
+<td title='com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.twoThreads()'><b>twoThreads</b><br>Test class: com.yahoo.ycsb.workloads.TestTimeSeriesWorkload</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
+<td>com.yahoo.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestTimeSeriesWorkload.validateSettingsDataIntegrity()'><b>validateSettingsDataIntegrity</b><br>Test class: site.ycsb.workloads.TestTimeSeriesWorkload</td>
+<td title='com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.validateSettingsDataIntegrity()'><b>validateSettingsDataIntegrity</b><br>Test class: com.yahoo.ycsb.workloads.TestTimeSeriesWorkload</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
+<td>com.yahoo.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestUnixEpochTimestampGenerator.variousIntervalsAndUnits()'><b>variousIntervalsAndUnits</b><br>Test class: site.ycsb.generator.TestUnixEpochTimestampGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator.variousIntervalsAndUnits()'><b>variousIntervalsAndUnits</b><br>Test class: com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.TestUnixEpochTimestampGenerator@887af79</td></tr>
+<td>com.yahoo.ycsb.generator.TestUnixEpochTimestampGenerator@887af79</td></tr>
 <tr>
-<td title='site.ycsb.workloads.TestTimeSeriesWorkload.verifyRow()'><b>verifyRow</b><br>Test class: site.ycsb.workloads.TestTimeSeriesWorkload</td>
+<td title='com.yahoo.ycsb.workloads.TestTimeSeriesWorkload.verifyRow()'><b>verifyRow</b><br>Test class: com.yahoo.ycsb.workloads.TestTimeSeriesWorkload</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
+<td>com.yahoo.ycsb.workloads.TestTimeSeriesWorkload@5bc79255</td></tr>
 <tr>
-<td title='site.ycsb.generator.TestRandomDiscreteTimestampGenerator.withStartTime()'><b>withStartTime</b><br>Test class: site.ycsb.generator.TestRandomDiscreteTimestampGenerator</td>
+<td title='com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator.withStartTime()'><b>withStartTime</b><br>Test class: com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator</td>
 <td></td>
 <td>0</td>
-<td>site.ycsb.generator.TestRandomDiscreteTimestampGenerator@7b49cea0</td></tr>
+<td>com.yahoo.ycsb.generator.TestRandomDiscreteTimestampGenerator@7b49cea0</td></tr>
 </table><p>
 </body>
 </html>

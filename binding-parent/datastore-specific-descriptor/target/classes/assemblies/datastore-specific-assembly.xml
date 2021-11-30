@@ -67,7 +67,7 @@ LICENSE file.
     <dependencySet>
       <outputDirectory>lib</outputDirectory>
       <includes>
-        <include>site.ycsb:core</include>
+        <include>com.yahoo.ycsb:core</include>
       </includes>
       <scope>provided</scope>
       <useTransitiveFiltering>true</useTransitiveFiltering>

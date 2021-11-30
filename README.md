@@ -1,80 +1,37 @@
-<!--
-Copyright (c) 2010 Yahoo! Inc., 2012 - 2016 YCSB contributors.
-All rights reserved.
+### 安装YCSB
 
-Licensed under the Apache License, Version 2.0 (the "License"); you
-may not use this file except in compliance with the License. You
-may obtain a copy of the License at
+主要更改的地方有：
 
-http://www.apache.org/licenses/LICENSE-2.0
+1. core目录，/usr/local/YCSB/core
+2. redis目录，/usr/local/YCSB/redis/src/main/java/com/yahoo/ycsb/db 其中更改RedisClient.java中96行和97行，可以更改将load/run文件写到哪个目录如/home/file
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-implied. See the License for the specific language governing
-permissions and limitations under the License. See accompanying
-LICENSE file.
--->
+### 安装redis
 
-YCSB
-====================================
-[![Build Status](https://travis-ci.org/brianfrankcooper/YCSB.png?branch=master)](https://travis-ci.org/brianfrankcooper/YCSB)
+### 更改负载
 
+- $ cd /user/local/YCSB/workloads ** 该目录下有很多类型的负载，可以自行更改
 
+### 编译命令
 
-Links
------
-* To get here, use https://ycsb.site
-* [Our project docs](https://github.com/brianfrankcooper/YCSB/wiki)
-* [The original announcement from Yahoo!](https://labs.yahoo.com/news/yahoo-cloud-serving-benchmark/)
+注意需要先开启redis服务： $ redis-server, 之后的命令将负载写入到redis中
 
-Getting Started
----------------
+1. 编译
 
-1. Download the [latest release of YCSB](https://github.com/brianfrankcooper/YCSB/releases/latest):
+- mvn -pl com.yahoo.ycsb:redis-binding -am clean package
 
-    ```sh
-    curl -O --location https://github.com/brianfrankcooper/YCSB/releases/download/0.17.0/ycsb-0.17.0.tar.gz
-    tar xfvz ycsb-0.17.0.tar.gz
-    cd ycsb-0.17.0
-    ```
-    
-2. Set up a database to benchmark. There is a README file under each binding 
-   directory.
+1. load
 
-3. Run YCSB command. 
+- ./bin/ycsb run redis -P workloads/workloada -p redis.host=localhost -p redis.port=6379 > outputrun.txt
+- 可以在/home/file目录下得到write.txt文件，执行以下命令
+  - mv write.txt load.txt，得到load文件
 
-    On Linux:
-    ```sh
-    bin/ycsb.sh load basic -P workloads/workloada
-    bin/ycsb.sh run basic -P workloads/workloada
-    ```
+1. run
 
-    On Windows:
-    ```bat
-    bin/ycsb.bat load basic -P workloads\workloada
-    bin/ycsb.bat run basic -P workloads\workloada
-    ```
+- ./bin/ycsb run redis -P workloads/workload_test -p redis.host=localhost -p redis.port=6379 > outputrun.txt
+- 可以在/home/file目录下得到write.txt文件，执行以下命令
+  - mv write.txt run.txt，得到run文件
 
-  Running the `ycsb` command without any argument will print the usage. 
-   
-  See https://github.com/brianfrankcooper/YCSB/wiki/Running-a-Workload
-  for a detailed documentation on how to run a workload.
+### 更改db_bench.cc文件
 
-  See https://github.com/brianfrankcooper/YCSB/wiki/Core-Properties for 
-  the list of available workload properties.
-
-
-Building from source
---------------------
-
-YCSB requires the use of Maven 3; if you use Maven 2, you may see [errors
-such as these](https://github.com/brianfrankcooper/YCSB/issues/406).
-
-To build the full distribution, with all database bindings:
-
-    mvn clean package
-
-To build a single database binding:
-
-    mvn -pl site.ycsb:mongodb-binding -am clean package
+1. 解析write.txt/read.txt文件，获取操作，对leveldb进行读写
+2. 主要分为如下几个部分：可以在db_bench.cc中搜索meggie,进行相应更改
